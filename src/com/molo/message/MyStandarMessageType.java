@@ -1,0 +1,29 @@
+package com.molo.message;
+
+public class MyStandarMessageType {
+	public static final int SYNTAXE_ERROR=-204,
+							NOT_ALLOWED=-205,
+							OK=200,
+							AUTHENTIFICATED_SUCCESSFULLY=202,
+							AUTHENTIFICATION_ERROR=-202,
+							SEND_MESSAGE_ERROR=-300,
+							EXIT=0,
+							MESSAGE=20,
+							ON_NEW_MEMBER_CONNECTION=22,
+							ON_MEMBER_DISCONNECTION=-22,
+							ON_ONE_LOGIN_CHANGED=23,
+							SERVER_CLOSED=-1,
+							SET_LOGIN_ERROR=-23,
+							REGISTER_ERROR=-24,
+							ERROR=-1000,
+							ON_MESSAGE_SEEN = 800,
+							MESSAGE_SENT = 808,
+							PROFIL_UPDATED = 810,
+							NOT_FOUND=404,
+							CALL_FROM = 1200,
+							CALL_ACCEPTED=1204,
+							CALL_FINISHED=1205,
+							CALL_CANCELED=-1204,
+							UNREACHABLE = -1025;
+	
+}
