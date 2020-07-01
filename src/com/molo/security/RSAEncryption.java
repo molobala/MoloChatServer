@@ -1,6 +1,7 @@
 package com.molo.security;
 
 
+
 import java.math.BigInteger;
 import java.security.InvalidKeyException;
 import java.security.Key;
@@ -174,7 +175,6 @@ public class RSAEncryption {
 			    System.exit(-1);
 			}
 
-			// Génération de la paire de clés
 			KeyPair paireCles = generateurCles.generateKeyPair();
 			return paireCles;
 		}

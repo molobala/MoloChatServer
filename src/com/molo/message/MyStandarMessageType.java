@@ -4,6 +4,7 @@ public class MyStandarMessageType {
 	public static final int SYNTAXE_ERROR=-204,
 							NOT_ALLOWED=-205,
 							OK=200,
+							EXCHANGE=2,
 							AUTHENTIFICATED_SUCCESSFULLY=202,
 							AUTHENTIFICATION_ERROR=-202,
 							SEND_MESSAGE_ERROR=-300,

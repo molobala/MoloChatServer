@@ -1,0 +1,6 @@
+env.json
+.settings
+.idea
+data/
+out/
+temp/

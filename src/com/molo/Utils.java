@@ -1,8 +1,25 @@
 package com.molo;
 
 import javax.sound.sampled.AudioFormat;
+import java.util.Arrays;
 
 public class Utils {
+	public static String convertStringToHex(String str){
+		StringBuilder builder=new StringBuilder();
+		char[] strChar=str.toCharArray();
+		for(int i=0;i<strChar.length;i++){
+			builder.append(Integer.toHexString(strChar[i]));
+		}
+		return  builder.toString();
+	}
+	public static byte[] removeZero(byte[] bytes){
+		int i=0;
+		int j=bytes.length-1;
+		while(bytes[i]==0) i++;
+		while(bytes[j]==0) j--;
+		System.out.println("Bytes range: "+i+" - "+j);
+		return Arrays.copyOfRange(bytes, i, j+1);
+	}
 	public static  String convertHexToString(String hex){
 
 		StringBuilder sb = new StringBuilder();

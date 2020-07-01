@@ -45,11 +45,6 @@ public class VoipProcess extends Thread{
 	public void run() {
 		try {
 			String line=reader.readUTF();
-			if(line==null)
-			{
-				close();
-				return;
-			}
 			System.out.println("VoipProcess:Line "+line);
 			JsonNode request=mapper.readTree(line);
 			if(request.has("label")){

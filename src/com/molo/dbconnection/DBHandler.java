@@ -1,14 +1,16 @@
 package com.molo.dbconnection;
 
+import com.molo.Main;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
 public class DBHandler {
-	private static final String URL="jdbc:mysql://localhost:3306/chat01",
-								USER="root",
-								PASSWORD="";
+	private static final String URL="jdbc:mysql://"+ Main.ENV.get("MYSQL_HOST").asText()+"/"+Main.ENV.get("MYSQL_DB").asText(),
+								USER=Main.ENV.get("MYSQL_USER").asText(),
+								PASSWORD=Main.ENV.get("MYSQL_PASS").asText();
 	private Connection dbh=null;
 	private Statement statement=null;
 	public DBHandler() throws SQLException {
